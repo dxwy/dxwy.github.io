@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>PCB-Project-ibom</title>
+    <url>/2021/01/04/PCB-Project-ibom/</url>
+    <content><![CDATA[<p><a href="/PCB-Project-ibom/JLink-v3.0.html">JLink-v3.0</a></p>
+<p><a href="/PCB-Project-ibom/CAN%E9%80%9A%E4%BF%A1%E9%81%A5%E6%8E%A7%E5%99%A8-v1.0.html">CAN通信遥控器-v1.0</a></p>
+]]></content>
+      <tags>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MDK-ARM进阶操作</title>
+    <url>/2021/01/03/MDK-ARM%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/</url>
+    <content><![CDATA[<h2 id="一、添加插件"><a href="#一、添加插件" class="headerlink" title="一、添加插件"></a>一、添加插件</h2><h3 id="1、Astyle：一键格式化代码"><a href="#1、Astyle：一键格式化代码" class="headerlink" title="1、Astyle：一键格式化代码"></a>1、Astyle：一键格式化代码</h3><p>Command：Astyle.exe路径<br>Arguments：$E*.c $E*.h</p>
+<p><img src="/2021/01/03/MDK-ARM%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/Astyle.png" alt="image.png"></p>
+<h3 id="2、FileComments：文件注释"><a href="#2、FileComments：文件注释" class="headerlink" title="2、FileComments：文件注释"></a>2、FileComments：文件注释</h3><p>Command：FileComments.exe路径<br>Arguments：!E</p>
+<p><img src="/2021/01/03/MDK-ARM%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/FlieComments.png" alt="image.png"></p>
+<h3 id="3、FunctionComment：函数注释"><a href="#3、FunctionComment：函数注释" class="headerlink" title="3、FunctionComment：函数注释"></a>3、FunctionComment：函数注释</h3><p>Command：FunctionComment.exe路径<br>Arguments：!E ~E</p>
+<p><img src="/2021/01/03/MDK-ARM%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/FunctionComment.png" alt="image.png"></p>
+<h3 id="4、DateTime：当前日期"><a href="#4、DateTime：当前日期" class="headerlink" title="4、DateTime：当前日期"></a>4、DateTime：当前日期</h3><p>Command：DateTime.exe路径<br>Arguments：!E ~E ^E</p>
+<p><img src="/2021/01/03/MDK-ARM%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/DateTime.png" alt="image.png"></p>
+<h3 id="5、DateTime：当前时间"><a href="#5、DateTime：当前时间" class="headerlink" title="5、DateTime：当前时间"></a>5、DateTime：当前时间</h3><p>Command：DateTime.exe路径<br>Arguments：!E ~E ^E T</p>
+<p><img src="/2021/01/03/MDK-ARM%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/DateTime2.png" alt="image.png"></p>
+<h2 id="二、KEIL工程文件说明"><a href="#二、KEIL工程文件说明" class="headerlink" title="二、KEIL工程文件说明"></a>二、KEIL工程文件说明</h2><p><img src="/2021/01/03/MDK-ARM%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/KEIL%E5%B7%A5%E7%A8%8B%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E.jpg" alt="image.png"></p>
+<h2 id="三、使用git"><a href="#三、使用git" class="headerlink" title="三、使用git"></a>三、使用git</h2><h3 id="1、加载SVCS"><a href="#1、加载SVCS" class="headerlink" title="1、加载SVCS"></a>1、加载SVCS</h3><p><img src="/2021/01/03/MDK-ARM%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/%E5%8A%A0%E8%BD%BDSVCS.png" alt="image.png"></p>
+<h3 id="2、修改Stage：一键添加所有修改"><a href="#2、修改Stage：一键添加所有修改" class="headerlink" title="2、修改Stage：一键添加所有修改"></a>2、修改Stage：一键添加所有修改</h3><p>可以做如下修改一键添加所有代码</p>
+<table>
+<thead>
+<tr>
+<th align="center">Stage ‘%F’</th>
+<th align="center">-&gt;</th>
+<th align="center">Stage all</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">add ‘%F’</td>
+<td align="center">-&gt;</td>
+<td align="center">add -all</td>
+</tr>
+</tbody></table>
+<p><img src="/2021/01/03/MDK-ARM%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/%E4%B8%80%E9%94%AE%E6%B7%BB%E5%8A%A0%E6%89%80%E6%9C%89%E4%BF%AE%E6%94%B9.png" alt="image.png"></p>
+<h3 id="3、将日志文件添加-gitignore"><a href="#3、将日志文件添加-gitignore" class="headerlink" title="3、将日志文件添加.gitignore"></a>3、将日志文件添加.gitignore</h3><p>工程编译后会生成很多编译文件，我们可以忽略这些文件的修改</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">!*.c </span><br><span class="line">!*.h</span><br><span class="line">*.<span class="built_in">log</span></span><br><span class="line">*.plg</span><br><span class="line">*.bak</span><br><span class="line">*.dep</span><br><span class="line">*.uvguix.*</span><br><span class="line">JLinkLog.txt</span><br><span class="line">*.o</span><br><span class="line">*.d</span><br><span class="line">*.crf</span><br><span class="line">*.tra</span><br><span class="line">*.axf</span><br><span class="line">*.hex</span><br><span class="line">*.lnp</span><br><span class="line">*.sct</span><br><span class="line">*.__i</span><br><span class="line">*.htm</span><br><span class="line">*.<span class="built_in">map</span></span><br></pre></td></tr></table></figure>
+<h3 id="4、使用命令"><a href="#4、使用命令" class="headerlink" title="4、使用命令"></a>4、使用命令</h3><p><img src="/2021/01/03/MDK-ARM%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4.png" alt="image.png"></p>
+<h2 id="四、参考链接"><a href="#四、参考链接" class="headerlink" title="四、参考链接"></a>四、参考链接</h2><p><a href="https://blog.csdn.net/xinxinsky/article/details/79204763">Keil的几个插件</a></p>
+]]></content>
+      <categories>
+        <category>软件使用笔记</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于我</title>
+    <url>/2021/01/03/about/</url>
+    <content><![CDATA[<p>姓名：吴雨晨</p>
+<p>现居：上海·松江</p>
+<p>GitHub: <a href="https://github.com/dxwy">dxwy</a></p>
+<p>QQ: <a href="http://wpa.qq.com/msgrd?v=3&uin=1257059019&site=qq&menu=yes">1257059019</a></p>
+<p>微信: CL1257059019</p>
+]]></content>
+  </entry>
+</search>
