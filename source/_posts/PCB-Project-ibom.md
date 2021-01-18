@@ -7,3 +7,5 @@ tags: PCB
 [JLink-v3.0](/PCB-Project-ibom/JLink-v3.0.html)
 
 [CAN通信遥控器-v1.0](/PCB-Project-ibom/CAN通信遥控器-v1.0.html)
+
+[TR主控板](/PCB-Project-ibom/TR主控板.html)
