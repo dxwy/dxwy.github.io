@@ -6,6 +6,8 @@ tags: PCB
 top: true
 ---
 
+[取箭机构集线板-v4.1](/PCB-Project-ibom/取箭机构集线板-v4.1.html)
+
 [ST-Link-v2.1-v1.0](/PCB-Project-ibom/ST-Link-v2.1-v1.0.html)
 
 [Jlink-ob-v3.1](/PCB-Project-ibom/Jlink-ob-v3.1.html)
