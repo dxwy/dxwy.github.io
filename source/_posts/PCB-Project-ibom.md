@@ -6,6 +6,12 @@ tags: PCB
 top: true
 ---
 
+[CAN&2.4G通用遥控器-v2.0](/PCB-Project-ibom/CAN&2.4G通用遥控器-v2.0.html)
+
+[TR主控板-v2.0](/PCB-Project-ibom/TR主控板-v2.0.html)
+
+[取箭机构集线板-v4.2](/PCB-Project-ibom/取箭机构集线板-v4.2.html)
+
 [取箭机构集线板-v4.1](/PCB-Project-ibom/取箭机构集线板-v4.1.html)
 
 [ST-Link-v2.1-v1.0](/PCB-Project-ibom/ST-Link-v2.1-v1.0.html)
