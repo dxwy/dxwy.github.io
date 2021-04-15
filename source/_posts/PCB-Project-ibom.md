@@ -5,6 +5,7 @@ Categories: PCB
 tags: PCB
 top: true
 ---
+[CAN&2.4G通用遥控器-v2.1](/PCB-Project-ibom/CAN&2.4G通用遥控器-v2.1.html)
 
 [CAN&2.4G通用遥控器-v2.0](/PCB-Project-ibom/CAN&2.4G通用遥控器-v2.0.html)
 
