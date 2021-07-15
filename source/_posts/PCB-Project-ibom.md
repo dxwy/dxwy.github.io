@@ -6,6 +6,8 @@ tags: PCB
 top: true
 ---
 
+[DOMINO纪念品-底板-v1.1](/PCB-Project-ibom/DOMINO纪念品-底板-v1.1.html)
+
 [4路继电器-v1.0](/PCB-Project-ibom/4路继电器-v1.0.html)
 
 [wearable-display-v2.1](/PCB-Project-ibom/wearable-display-v2.1.html)
