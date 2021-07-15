@@ -6,6 +6,10 @@ tags: PCB
 top: true
 ---
 
+[4路继电器-v1.0](/PCB-Project-ibom/4路继电器-v1.0.html)
+
+[wearable-display-v2.1](/PCB-Project-ibom/wearable-display-v2.1.html)
+
 [TR主控板-v3.1](/PCB-Project-ibom/TR主控板-v3.1.html)
 
 [Sensing-Conductive-Fiber-v1.0](/PCB-Project-ibom/Sensing-Conductive-Fiber-v1.0.html)
