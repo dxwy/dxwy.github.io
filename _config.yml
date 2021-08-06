@@ -31,6 +31,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
   - PCB-Project-ibom/**
+  - happy_birthday_to_yaojie2020/**'
   - README.md
 # Writing
 new_post_name: :title.md # File name of new posts
