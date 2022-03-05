@@ -8,6 +8,8 @@ top: true
 
 [Resistance-Measuring-Device-v3.1](/PCB-Project-ibom/Resistance-Measuring-Device-v3.1.html)
 
+[Capacitor-Array-Acquisition-Board-v1.0](/PCB-Project-ibom/Capacitor-Array-Acquisition-Board-v1.0.html)
+
 [Domino-Souvenir-Mother-Board-v1.1](/PCB-Project-ibom/Domino-Souvenir-Mother-Board-v1.1.html)
 
 [Resistance-Measuring-Device-v3.0](/PCB-Project-ibom/Resistance-Measuring-Device-v3.0.html)
