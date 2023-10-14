@@ -3,18 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: dxwy'blog
-subtitle: ''
-description: 'dxwy的博客'
+title: 吴雨晨的博客
+subtitle: 目前可公开的情报
+description: 仰望星空，脚踏实地
 keywords:
-author: dxwy
+author: 吴雨晨
 language: zh-CN
-timezone: ''
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
 url: https://dxwy.github.io
-root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -33,6 +32,7 @@ skip_render:
   - PCB-Project-ibom/**
   - happy_birthday_to_yaojie2020/**
   - README.md
+
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
@@ -40,53 +40,31 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: ""
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
-marked:
-  gfm: true
-  pedantic: false
-  breaks: true
-  smartLists: true
-  smartypants: true
-  quotes: '¡°¡±¡®¡¯'
-  modifyAnchors: 0
-  anchorAlias: false
-  autolink: true
-  mangle: true
-  sanitizeUrl: false
-  headerIds: true
-  lazyload: false
-  prependRoot: true
-  postAsset: true
-  external_link:
-    enable: false
-    exclude: []
-    nofollow: false
-  disableNunjucks: false
-  descriptionLists: true
 relative_link: false
 future: true
 highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: ""
   wrap: true
   hljs: false
 prismjs:
   enable: false
   preprocess: true
   line_number: true
-  tab_replace: ''
+  tab_replace: ""
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
 
@@ -106,7 +84,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: "mtime"
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -122,12 +100,50 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+markdown:
+  preset: "default"
+  render:
+    html: true
+    xhtmlOut: false
+    langPrefix: "language-"
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: "“”‘’"
+  enable_rules:
+  disable_rules:
+  plugins:
+    - markdown-it-abbr # https://github.com/markdown-it/markdown-it-abbr
+    - markdown-it-cjk-breaks # https://github.com/markdown-it/markdown-it-cjk-breaks
+    - markdown-it-container # https://github.com/markdown-it/markdown-it-container
+    - markdown-it-deflist # https://github.com/markdown-it/markdown-it-deflist
+    - markdown-it-emoji # https://github.com/markdown-it/markdown-it-emoji
+    - markdown-it-footnote # https://github.com/markdown-it/markdown-it-footnote
+    - markdown-it-ins # https://github.com/markdown-it/markdown-it-ins
+    - markdown-it-mark # https://github.com/markdown-it/markdown-it-mark
+    - markdown-it-sub # https://github.com/markdown-it/markdown-it-sub
+    - markdown-it-sup # https://github.com/markdown-it/markdown-it-sup
+  anchors:
+    level: 2
+    collisionSuffix: ""
+    permalink: false
+    permalinkClass: "header-anchor"
+    permalinkSide: "left"
+    permalinkSymbol: "¶"
+    case: 0
+    separator: "-"
+  images:
+    lazyload: false
+    prepend_root: false
+    post_asset: false
+  inline: false # https://markdown-it.github.io/markdown-it/#MarkdownIt.renderInline
+
 theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: 'git'
+  type: "git"
   repo: https://github.com/dxwy/dxwy.github.io.git
   branch: main
 
