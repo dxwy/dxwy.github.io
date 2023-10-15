@@ -8,21 +8,21 @@ inline_image: true
 <center>
     <h1>吴雨晨</h1>
     <div>
-        <img src="assets/envelope-solid.svg" class="about-img-22" style="margin-bottom: 0;">
+        <img src="assets/envelope-solid.svg" style="display: inline-block;height: 22px;vertical-align: middle;margin-bottom: 0;">
         <a href='mailto:wyc15180543539@163.com'>Mail</a> · 
-        <img src="assets/github-brands.svg" class="about-img-22" style="margin-bottom: 0;">
+        <img src="assets/github-brands.svg" style="display: inline-block;height: 22px;vertical-align: middle;margin-bottom: 0;">
         <a href="https://github.com/dxwy">dxwy</a> · 
-        <img src="assets/QQ.svg" class="about-img-22" style="margin-bottom: 0;">
+        <img src="assets/QQ.svg" style="display: inline-block;height: 22px;vertical-align: middle;margin-bottom: 0;">
         <a href='http://wpa.qq.com/msgrd?v=3&uin=1257059019&site=qq&menu=yes'>QQ</a>
     </div>
 </center>
 
-## <img src="assets/info-circle-solid.svg" class="about-img-26" style="margin-bottom: 3px;"> 个人信息
+## <img src="assets/info-circle-solid.svg" style="display: inline-block;height: 26px;vertical-align: middle;margin-bottom: 3px;"> 个人信息
 
 - 男，1999 年生
 - 现居：上海 · 松江
 
-## <img src="assets/graduation-cap-solid.svg" class="about-img-26" style="margin-bottom: 3px;"> 教育经历
+## <img src="assets/graduation-cap-solid.svg" style="display: inline-block;height: 26px;vertical-align: middle;margin-bottom: 3px;"> 教育经历
 
 - 学士，东华大学，电子信息工程，2017.9~2021.6
 - 硕博连读，东华大学，信息与通信智能系统，2021.9~至今（预计 2027.3 结束）
@@ -30,7 +30,7 @@ inline_image: true
 - 英语：CET4/6
 - 计算机：二级 C 程序设计、三级嵌入式系统开发技术
 
-## <img src="assets/competition.svg" class="about-img-26" style="margin-bottom: 3px;"> 竞赛经历
+## <img src="assets/competition.svg" style="display: inline-block;height: 26px;vertical-align: middle;margin-bottom: 3px;"> 竞赛经历
 
 ### 国家级
 
@@ -70,7 +70,7 @@ inline_image: true
 
   使用一两句话描述项目的主要功能，然后介绍自己在项目中的角色，解决了什么问题，使用什么方式解决，比别人的方法相比有什么优势（尽量用数据来说明）。 -->
 
-## <img src="assets/tools-solid.svg" class="about-img-26" style="margin-bottom: 3px;"> 技能清单
+## <img src="assets/tools-solid.svg" style="display: inline-block;height: 26px;vertical-align: middle;margin-bottom: 3px;"> 技能清单
 
 - ★★★ C
 - ★★☆ C++、Python
