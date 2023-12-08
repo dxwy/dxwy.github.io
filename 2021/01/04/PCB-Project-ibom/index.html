@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-dxwy.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-dxwy.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"dxwy.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp","menu_item":"fadeInDown"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+<meta name="description" content="Capacitor-Array-Acquisition-Board-v1.2 前端滤波电路-v1.0 Head-Motion-v1.0 Resistance-Measuring-Device-v3.1 Capacitor-Array-Acquisition-Board-v1.0 Domino-Souvenir-Mother-Board-v1.1 Resistance-Measuring-Devic">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PCB-Project-ibom">
+<meta property="og:url" content="https://dxwy.github.io/2021/01/04/PCB-Project-ibom/index.html">
+<meta property="og:site_name" content="吴雨晨的博客">
+<meta property="og:description" content="Capacitor-Array-Acquisition-Board-v1.2 前端滤波电路-v1.0 Head-Motion-v1.0 Resistance-Measuring-Device-v3.1 Capacitor-Array-Acquisition-Board-v1.0 Domino-Souvenir-Mother-Board-v1.1 Resistance-Measuring-Devic">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-01-04T07:17:20.000Z">
+<meta property="article:modified_time" content="2023-12-08T14:37:18.087Z">
+<meta property="article:author" content="吴雨晨">
+<meta property="article:tag" content="PCB">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://dxwy.github.io/2021/01/04/PCB-Project-ibom/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>PCB-Project-ibom | 吴雨晨的博客</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">吴雨晨的博客</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">目前可公开的情报</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">1</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">4</span></a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="吴雨晨"
+      src="/images/favicon-200x200-dxwy.png">
+  <p class="site-author-name" itemprop="name">吴雨晨</p>
+  <div class="site-description" itemprop="description">仰望星空，脚踏实地</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/dxwy" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;dxwy" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:wyc15180543539@163.com" title="E-Mail → mailto:wyc15180543539@163.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://dxwy.github.io/2021/01/04/PCB-Project-ibom/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/favicon-200x200-dxwy.png">
+      <meta itemprop="name" content="吴雨晨">
+      <meta itemprop="description" content="仰望星空，脚踏实地">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="吴雨晨的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          PCB-Project-ibom
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-01-04 15:17:20" itemprop="dateCreated datePublished" datetime="2021-01-04T15:17:20+08:00">2021-01-04</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2023-12-08 22:37:18" itemprop="dateModified" datetime="2023-12-08T22:37:18+08:00">2023-12-08</time>
+      </span>
+
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>730</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p><a href="/PCB-Project-ibom/Capacitor-Array-Acquisition-Board-v1.2.html">Capacitor-Array-Acquisition-Board-v1.2</a></p>
+<p><a href="/PCB-Project-ibom/%E5%89%8D%E7%AB%AF%E6%BB%A4%E6%B3%A2%E7%94%B5%E8%B7%AF-v1.0.html">前端滤波电路-v1.0</a></p>
+<p><a href="/PCB-Project-ibom/Head-Motion-v1.0.html">Head-Motion-v1.0</a></p>
+<p><a href="/PCB-Project-ibom/Resistance-Measuring-Device-v3.1.html">Resistance-Measuring-Device-v3.1</a></p>
+<p><a href="/PCB-Project-ibom/Capacitor-Array-Acquisition-Board-v1.0.html">Capacitor-Array-Acquisition-Board-v1.0</a></p>
+<p><a href="/PCB-Project-ibom/Domino-Souvenir-Mother-Board-v1.1.html">Domino-Souvenir-Mother-Board-v1.1</a></p>
+<p><a href="/PCB-Project-ibom/Resistance-Measuring-Device-v3.0.html">Resistance-Measuring-Device-v3.0</a></p>
+<p><a href="/PCB-Project-ibom/RFBM4044B4-Receiver.html">RFBM4044B4-Receiver</a></p>
+<p><a href="/PCB-Project-ibom/Resistance-Measuring-Device-v1.1.html">Resistance-Measuring-Device-v1.1</a></p>
+<p><a href="/PCB-Project-ibom/Resistance-Measuring-Device-v2.0.html">Resistance-Measuring-Device-v2.0</a></p>
+<p><a href="/PCB-Project-ibom/Resistance-Measuring-Device-v1.0.html">Resistance-Measuring-Device-v1.0</a></p>
+<p><a href="/PCB-Project-ibom/CAN&amp;2.4G%E9%80%9A%E7%94%A8%E9%81%A5%E6%8E%A7%E5%99%A8-v2.2.html">CAN&amp;2.4G通用遥控器-v2.2</a></p>
+<p><a href="/PCB-Project-ibom/DOMINO%E7%BA%AA%E5%BF%B5%E5%93%81-%E5%BA%95%E6%9D%BF-v1.1.html">DOMINO纪念品-底板-v1.1</a></p>
+<p><a href="/PCB-Project-ibom/4%E8%B7%AF%E7%BB%A7%E7%94%B5%E5%99%A8-v1.0.html">4路继电器-v1.0</a></p>
+<p><a href="/PCB-Project-ibom/wearable-display-v2.1.html">wearable-display-v2.1</a></p>
+<p><a href="/PCB-Project-ibom/TR%E4%B8%BB%E6%8E%A7%E6%9D%BF-v3.1.html">TR主控板-v3.1</a></p>
+<p><a href="/PCB-Project-ibom/Sensing-Conductive-Fiber-v1.0.html">Sensing-Conductive-Fiber-v1.0</a></p>
+<p><a href="/PCB-Project-ibom/wearable-display-v2.0.html">wearable-display-v2.0</a></p>
+<p><a href="/PCB-Project-ibom/CAN&amp;2.4G%E9%80%9A%E7%94%A8%E9%81%A5%E6%8E%A7%E5%99%A8-v2.1.html">CAN&amp;2.4G通用遥控器-v2.1</a></p>
+<p><a href="/PCB-Project-ibom/CAN&amp;2.4G%E9%80%9A%E7%94%A8%E9%81%A5%E6%8E%A7%E5%99%A8-v2.0.html">CAN&amp;2.4G通用遥控器-v2.0</a></p>
+<p><a href="/PCB-Project-ibom/TR%E4%B8%BB%E6%8E%A7%E6%9D%BF-v2.0.html">TR主控板-v2.0</a></p>
+<p><a href="/PCB-Project-ibom/%E5%8F%96%E7%AE%AD%E6%9C%BA%E6%9E%84%E9%9B%86%E7%BA%BF%E6%9D%BF-v4.2.html">取箭机构集线板-v4.2</a></p>
+<p><a href="/PCB-Project-ibom/%E5%8F%96%E7%AE%AD%E6%9C%BA%E6%9E%84%E9%9B%86%E7%BA%BF%E6%9D%BF-v4.1.html">取箭机构集线板-v4.1</a></p>
+<p><a href="/PCB-Project-ibom/ST-Link-v2.1-v1.0.html">ST-Link-v2.1-v1.0</a></p>
+<p><a href="/PCB-Project-ibom/Jlink-ob-v3.1.html">Jlink-ob-v3.1</a></p>
+<p><a href="/PCB-Project-ibom/Maternity-Clothes-PCB-v2.0.html">Maternity-Clothes-PCB-v2.0</a></p>
+<p><a href="/PCB-Project-ibom/%E5%8F%96%E7%AE%AD%E6%9C%BA%E6%9E%84%E9%9B%86%E7%BA%BF%E6%9D%BF-v4.0.html">取箭机构集线板-v4.0</a></p>
+<p><a href="/PCB-Project-ibom/DR%E4%B8%BB%E6%8E%A7%E6%9D%BF-v1.0.html">DR主控板-v1.0</a></p>
+<p><a href="/PCB-Project-ibom/Maternity-Clothes-v1.0.html">Maternity-Clothes-v1.0</a></p>
+<p><a href="/PCB-Project-ibom/STM32F105RCT6-CAN%E9%80%9A%E4%BF%A1%E6%B5%8B%E8%AF%95%E6%9D%BF-v1.0.html">STM32F105RCT6-CAN通信测试板-v1.0</a></p>
+<p><a href="/PCB-Project-ibom/STM32F103C8T6-CAN%E9%80%9A%E4%BF%A1%E6%B5%8B%E8%AF%95%E6%9D%BF-v1.0.html">STM32F103C8T6-CAN通信测试板-v1.0</a></p>
+<p><a href="/PCB-Project-ibom/%E5%8F%96%E7%AE%AD%E6%9C%BA%E6%9E%84%E9%9B%86%E7%BA%BF%E6%9D%BF-v3.0.html">取箭机构集线板-v3.0</a></p>
+<p><a href="/PCB-Project-ibom/CAN%E9%80%9A%E4%BF%A1%E9%81%A5%E6%8E%A7%E5%99%A8-v1.1.html">CAN通信遥控器-v1.1</a></p>
+<p><a href="/PCB-Project-ibom/JLink-v3.0.html">JLink-v3.0</a></p>
+<p><a href="/PCB-Project-ibom/CAN%E9%80%9A%E4%BF%A1%E9%81%A5%E6%8E%A7%E5%99%A8-v1.0.html">CAN通信遥控器-v1.0</a></p>
+<p><a href="/PCB-Project-ibom/TR%E4%B8%BB%E6%8E%A7%E6%9D%BF.html">TR主控板</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/PCB/" rel="tag"># PCB</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/01/03/MDK-ARM%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/" rel="prev" title="MDK-ARM进阶操作">
+                  <i class="fa fa-chevron-left"></i> MDK-ARM进阶操作
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/01/04/hexo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="next" title="hexo学习笔记">
+                  hexo学习笔记 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">吴雨晨</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">3k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">3 分钟</span>
+  </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div><script color="0,0,255" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
